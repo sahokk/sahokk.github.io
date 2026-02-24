@@ -121,10 +121,9 @@ p {
 
 /* Projects */
 
-.projects {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 2rem;
+.product-grid {
+	padding: 1rem;
+	max-width: 960px;
 }
 
 .card {
