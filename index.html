@@ -17,7 +17,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Pekori | Engineer Portfolio</title>
@@ -26,18 +26,35 @@
 			content="Pekoriのエンジニアポートフォリオと個人サービス一覧" />
 	</head>
 	<body>
+		<nav class="nav">
+			<span class="nav-logo">Pekori.dev</span>
+			<div class="nav-links">
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#products">Products</a>
+				<a href="#links">Links</a>
+			</div>
+		</nav>
+
 		<div class="hero">
+			<div class="hero-badge">✦ Available for projects</div>
 			<h1>Pekori</h1>
-			<p>Systems Engineer / Web Developer</p>
+			<p class="hero-sub">Systems Engineer / Web Developer</p>
+			<div class="hero-cta">
+				<a href="#products" class="btn-primary">作品を見る</a>
+				<a href="#links" class="btn-ghost">コンタクト</a>
+			</div>
 		</div>
 
-		<section>
-			<h2>About</h2>
-			<p>個人開発と業務開発を行うエンジニア。</p>
+		<section id="about">
+			<div class="section-label">01 — About</div>
+			<h2>自己紹介</h2>
+			<p class="about-text">個人開発と業務開発を行うエンジニア。<br>使いやすくて美しいものを作ることが好きです。</p>
 		</section>
 
-		<section>
-			<h2>Skills</h2>
+		<section id="skills">
+			<div class="section-label">02 — Skills</div>
+			<h2>スキル</h2>
 			<div class="skills">
 				<div class="skill">HTML / CSS</div>
 				<div class="skill">JavaScript</div>
@@ -49,8 +66,9 @@
 			</div>
 		</section>
 
-		<section>
-			<h2>Products</h2>
+		<section id="products">
+			<div class="section-label">03 — Products</div>
+			<h2>制作物</h2>
 
 			<div class="product-grid">
 				<a href="/score-keeper/" class="card">
@@ -59,48 +77,63 @@
 							src="assets/icons/score-keeper.svg"
 							alt="Score Keeper Icon" />
 					</div>
-					<div>
+					<div class="card-body">
 						<h3>Score Keeper</h3>
 						<p>ゲームのスコア管理ツール</p>
 					</div>
+					<div class="card-arrow">→</div>
 				</a>
-			</div>
 
-			<div class="product-grid">
 				<a href="/reflexes-test/" class="card">
 					<div class="icon-wrapper">
 						<img
 							src="assets/icons/reflexes-test.svg"
 							alt="Reflexes Test Icon" />
 					</div>
-					<div>
+					<div class="card-body">
 						<h3>反射神経テスト</h3>
 						<p>反応速度を測定するツール</p>
 					</div>
+					<div class="card-arrow">→</div>
 				</a>
 			</div>
 		</section>
 
-		<section>
-			<h2>Links</h2>
-			<p>
+		<section id="links">
+			<div class="section-label">04 — Links</div>
+			<h2>リンク</h2>
+			<div class="link-grid">
 				<a
-					class="inline"
+					class="link-card"
 					href="https://github.com/sahokk"
 					target="_blank"
-					>GitHub</a
-				>
-			</p>
-			<p>
+					rel="noopener noreferrer">
+					<svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
+					</svg>
+					<span>GitHub</span>
+					<svg class="link-external" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+						<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"/>
+					</svg>
+				</a>
 				<a
-					class="inline"
+					class="link-card"
 					href="https://qiita.com/sahokk"
 					target="_blank"
-					>Qiita</a
-				>
-			</p>
+					rel="noopener noreferrer">
+					<svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.57 18.38c-3.46 0-6.27-2.81-6.27-6.27 0-3.46 2.81-6.27 6.27-6.27 1.21 0 2.34.34 3.29.94l-1.06 1.06a4.48 4.48 0 1 0 1.56 2.98h-2.25v-1.5h3.78c.04.24.06.49.06.75 0 3.46-2.81 6.27-6.38 6.27z"/>
+					</svg>
+					<span>Qiita</span>
+					<svg class="link-external" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+						<path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"/>
+					</svg>
+				</a>
+			</div>
 		</section>
 
-		<footer>© 2026 Pekori.dev</footer>
+		<footer>
+			<span>© 2026 Pekori.dev</span>
+		</footer>
 	</body>
 </html>
